@@ -23,6 +23,14 @@
         <div class="links-container">
             <a ui-sref="collection" class="navbar-link">collection</a>
         </div>
+        <div class="main-controls">
+            <a class="previous" ng-click="previousSong()">
+                <span class="ion-skip-backward"></span>
+            </a>
+            <a class="next" ng-click="nextSong()">
+                <span class="ion-skip-forward"></span>
+            </a>
+        </div>
     </nav>
     
     <ui-view></ui-view>
