@@ -2,7 +2,7 @@
     function SongPlayer($rootScope, Fixtures) {
         var SongPlayer = {};
         
-        var current Album = Fixtures.getAlbum();
+        var currentAlbum = Fixtures.getAlbum();
         /**
         @dec Buzz object audio file
         @type {Object}
@@ -46,9 +46,17 @@
         };
         
         var playSong = function() {
-            currentBuzzObject.play(currentBuzzObject);
-            song.playing = true: song.playing = true;
+            currentBuzzObject.play();
+            song.playing = true;
         }
+        
+        /*
+        var playSong = function(song) {
+            currentBuzzObject.play();
+            song.playing = true;
+        };
+        */
+        
         /**
         @function play
         @desc Play current or new song
