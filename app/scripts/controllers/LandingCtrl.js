@@ -1,10 +1,9 @@
 (function() {
-    function PlayerBarCtrl(Fixtures, SongPlayer) {
-        this.albumData = Fixtures.getAlbum();
-        this.songPlayer = SongPlayer;
+    function LandingCtrl() {
+        this.heroTitle = "Turn the Music Up!";
     };
 
     angular
         .module('blocJams')
-        .controller('PlayerBarCtrl', ['Fixtures', 'SongPlayer', PlayerBarCtrl]);
+        .controller('LandingCtrl', LandingCtrl);
 })();
